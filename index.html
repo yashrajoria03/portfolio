@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+  <title>Yash Rajoria</title>
+</head>
+
+<body class="bg-backgroundColor text-white font-interF">
+  <!-- NavBar -->
+  <nav
+    class="px-16 flex items-center justify-between pt-8 pb-4 mb-6 mx-auto bg-backgroundColorNav fixed top-0 left-0 right-0 z-50 backdrop-blur-xl ">
+    <div class="flex items-center pt-2 justify-start w-1/2 sm:w-lg sm:text-4xl text-5xl">
+      <a href="./index.html">
+        <h3 class="text__glitch sm:w-full logo">/* YR */</h3>
+      </a>
+    </div>
+    <div
+      class="hidden container text-lg font-medium flex-row items-center pr-14 justify-end space-x-10 md:flex md:w-1/2">
+      <a href="#" id="projectLink" class="hover:text-darkGrayishBlue link">Projects</a>
+      <a href="./about.html" class="hover:text-darkGrayishBlue link">About</a>
+      <a href="./contact.html" class="hover:text-darkGrayishBlue link">Contact</a>
+    </div>
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    </div>
+
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold  sm:w-min-3xl sm:self-center px-8 right-6 drop-shadow-md bg-cardColor text-overlay">
+        <a href="#" id="projectLink" class="hover:text-darkGrayishBlue link">Projects</a>
+        <a href="./about.html" class="hover:text-darkGrayishBlue link">About</a>
+        <a href="./contact.html" class="hover:text-darkGrayishBlue link">Contact</a>
+    </div>
+  </nav>
+  <!-- Intro Section -->
+  <section id="intro">
+    <div
+      class="container mt-40 mb-20 leading-tight max-w-3xl px-10 md:pt-42 md:pb-32 sm:pb-32 sm:text-4xl md:text-5xl sm:pt-24">
+      Namaste! I’m Yash Rajoria, a full stack developer who loves solving
+      complex problems through coding.
+    </div>
+  </section>
+  <!-- projects -->
+  <section id="projects">
+    <div class="container mt-14 mx-auto px-5 mb-14 z-0">
+      <p class="text-5xl text-center mb-4 text-overlay">&lt/&gt</p>
+      <p class="text-5xl text-center mb-5">Projects</p>
+      <ul id="cards" class="grid grid-cols-1 gap-8 text-white list-none z-1">
+        <li class="card z-0" id="card_1">
+          <div class="card__content z-1 bg-cardColor backdrop-blur-sm rounded-2xl overflow">
+            <div>
+              <h2 class="font-300 text-5xl sm:text-4xl">Amka</h2>
+              <p class="text-overlay">
+                An ecommerce site built using MERN stack with working login
+                page, checkout ,cart and search bar functionality.
+              </p>
+              <p class="text-overlay container flex gap-4 items-center justify-start my-2">
+                <a href="https://github.com/yashrajoria03/mern-ecommerce">
+                  <img src="https://img.icons8.com/material-sharp/24/FFFFFF/github.png" tooltip="visit github" />
+                </a>
+                <a href="https://amka-store.netlify.app/">
+                  <img src="https://img.icons8.com/material-rounded/24/FFFFFF/web.png" />
+                </a>
+              </p>
+            </div>
+            <figure>
+              <img src="img/amka1.png" alt="Image description" />
+            </figure>
+          </div>
+        </li>
+        <li class="card" id="card_1">
+          <div class="card__content bg-cardColor backdrop-blur-sm rounded-2xl overflow">
+            <div>
+              <h2 class="font-300 text-5xl sm:text-4xl">Crypto Exchange</h2>
+              <p class="text-overlay">
+                A simple crytocurrency exchange made using react and an
+                coingecko api. It show realtime price, market share as well
+                other data to the user.
+              </p>
+              <p class="text-overlay container flex gap-4 items-center justify-start my-2">
+                <a href="#">
+                  <img src="https://img.icons8.com/material-sharp/24/FFFFFF/github.png" tooltip="visit github" />
+                </a>
+                <a href="#">
+                  <img src="https://img.icons8.com/material-rounded/24/FFFFFF/web.png" />
+                </a>
+              </p>
+            </div>
+            <figure>
+              <img src="img/crypto.png" alt="Image description" />
+            </figure>
+          </div>
+        </li>
+        <li class="card" id="card_1">
+          <div class="card__content bg-cardColor backdrop-blur-sm rounded-2xl overflow">
+            <div>
+              <h2 class="font-300 text-5xl sm:text-4xl">Algorithm Visualizer</h2>
+              <p class="text-overlay">
+                An algorithm visualization tool built using html, css and javascript. It shows how the algorithms works visually in a simple manner using bars representing data.
+              </p>
+              <p class="text-overlay container flex gap-4 items-center justify-start my-2">
+                <a href="#">
+                  <img src="https://img.icons8.com/material-sharp/24/FFFFFF/github.png" tooltip="visit github" />
+                </a>
+                <a href="#">
+                  <img src="https://img.icons8.com/material-rounded/24/FFFFFF/web.png" />
+                </a>
+              </p>
+            </div>
+            <figure>
+              <img src="img/visualize.png"
+                alt="Image description" />
+            </figure>
+          </div>
+        </li>
+    
+        <img id="readmore" class="mx-auto h-8 w-8 cursor-pointer"
+          src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/double-down.png" alt="click to expand" />
+      </ul>
+    </div>
+
+    <!-- <hr class="bg-white mb-36" /> -->
+    <!-- </div> -->
+  </section>
+
+  <section id="connect">
+    <div class="container mt-16 mx-auto px-5 mb-16 z-0 flex-col items-center justify-center gap-2">
+      <h1 class="text-4xl text-white py-2 text-center max-w-xl mx-auto">
+        I'm always open to new opportunities
+      </h1>
+      <p class="text-blue-500 py-2 mx-auto text-center">Let's Connect.</p>
+      <ul class="mt-4 leading-loose text-sm flex gap-4 justify-center">
+        <li>
+          <a class="text-gray-400 hover:text-gray-100" href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-400 hover:text-gray-100" href="#">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-400 hover:text-gray-100" href="#">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-400 hover:text-gray-100" href="#">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-gray-100 py-2">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="w-full md:w-1/3 px-4">
+        <p class="mt-4 text-sm text-overlay">
+          Designed and Developed by Yash Rajoria
+        </p>
+      </div>
+      <div class="w-full md:w-1/3 px-4">
+        <p class="mt-4 text-sm text-overlay text-center">
+          Copyright © 2023 YR
+        </p>
+      </div>
+      <div class="w-full md:w-1/3 px-4">
+        <ul class="mt-4 leading-loose text-sm flex gap-4 justify-end">
+          <li>
+            <a class="text-gray-400 hover:text-gray-100" href="#">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-gray-100" href="#">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-gray-100" href="#">
+              <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-gray-100" href="#">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+    
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open')
+      nav.classList.toggle('flex')
+      nav.classList.toggle('hidden')
+    })
+    const text = window.baffle(".text__glitch");
+    text.set({
+      characters: "█▓'░ /▓>",
+      speed: 200,
+    });
+    function alpha() {
+      text.start();
+      text.reveal(4000);
+    }
+    alpha();
+    setInterval(alpha, 8000);
+
+    var state = true;
+
+    var x = document.getElementById("readmore");
+    x.addEventListener("click", () => {
+      if (state) {
+        x.src = "img/doubleup.png";
+        state = false;
+        var ele = document.getElementsByClassName("card");
+        console.log(ele);
+        for (var i = 2; i < ele.length; i++) {
+          ele[i].style.display = "block";
+        }
+      } else {
+        state = true;
+        var ele = document.getElementsByClassName("card");
+        console.log(ele);
+        for (var i = 2; i < ele.length; i++) {
+          ele[i].style.display = "none";
+        }
+        x.src =
+          "https://img.icons8.com/fluency-systems-regular/48/FFFFFF/double-down.png";
+      }
+    });
+
+    function jumpProject() {
+      window.scrollTo(0, 540);
+    }
+    document
+      .getElementById("projectLink")
+      .addEventListener("click", jumpProject);
+
+   
+  </script>
+</body>
+
+</html>
